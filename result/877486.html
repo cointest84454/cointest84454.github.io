@@ -48,6 +48,28 @@
             $('#copy_link').click(function() {
                 copyToClipboard(window.location.href);
             });
+
+            setTimeout(function() {
+                var wid = $(".process").width();
+                var bae = 728 / 90;
+                var he = wid / bae;
+                $("ins, ins *").width(wid);
+                $("ins, ins *").attr("style", "min-width:" + wid + "px");
+                $("ins iframe").contents().find("img").attr("width", wid)
+                $("ins, ins *").height(he)
+                $("ins iframe").contents().find("img").attr("height", he)
+            }, 300)
+
+            $(window).resize(function() {
+                var wid = $(".process").width();
+                var bae = 728 / 90;
+                var he = wid / bae;
+                $("ins, ins *").width(wid);
+                $("ins, ins *").attr("style", "min-width:" + wid + "px");
+                $("ins iframe").contents().find("img").attr("width", wid)
+                $("ins, ins *").height(he)
+                $("ins iframe").contents().find("img").attr("height", he)
+            })
         })
     </script>
 </head>
@@ -108,8 +130,8 @@
                         </a>
                     </div>
                 </div>
-                <!-- <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-NzucO3vYEUJfCNZc" data-ad-width="728" data-ad-height="90"></ins>
-                <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
+                <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-NzucO3vYEUJfCNZc" data-ad-width="728" data-ad-height="90"></ins>
+                <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
             </div>
         </div>
     </div>
