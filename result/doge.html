@@ -1,29 +1,116 @@
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-<img src="https://cointest84454.github.io/cointest/main.png" style="display:none;">
-<a href="javascript:;" id="kakao-link-btn">
-    <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" width="10px" />
-</a>
+<!DOCTYPE html>
+<html lang="en" style="height:100%;font-size: 62.5%;">
 
-<script type="text/javascript">
-    Kakao.init('2af871559731a9008ebe3658019028e6');
-    Kakao.Link.createDefaultButton({
-        container: '#kakao-link-btn',
-        objectType: 'feed',
-        content: {
-            title: document.title,
-            description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
-            imageUrl: "https://cointest84454.github.io/main.png",
-            link: {
-                webUrl: document.location.href,
-                mobileWebUrl: document.location.href
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./result.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <img src="https://cointest84454.github.io/cointest/main.png" style="display:none;" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Kakao.init('2af871559731a9008ebe3658019028e6');
+            Kakao.Link.createDefaultButton({
+                container: '#kakao-link-btn',
+                objectType: 'feed',
+                content: {
+                    title: document.title,
+                    description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
+                    imageUrl: "https://cointest84454.github.io/main.png",
+                    link: {
+                        webUrl: document.location.href,
+                        mobileWebUrl: document.location.href
+                    }
+                },
+                buttons: [{
+                    title: '테스트 결과 확인하기',
+                    link: {
+                        mobileWebUrl: document.location.href,
+                        webUrl: document.location.href
+                    }
+                }]
+            });
+
+            function copyToClipboard(val) {
+                var t = document.createElement("textarea");
+                document.body.appendChild(t);
+                t.value = val;
+                t.select();
+                document.execCommand('copy');
+                document.body.removeChild(t);
             }
-        },
-        buttons: [{
-            title: '테스트 결과 확인하기',
-            link: {
-                mobileWebUrl: document.location.href,
-                webUrl: document.location.href
-            }
-        }]
-    });
-</script>
+            $('#copy_link').click(function() {
+                copyToClipboard(window.location.href);
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v9.0" nonce="w9zn4HLf"></script>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="process">
+                <div id="result__title__container">
+                    <img id="result__title" src="../images/result_title.png" />
+                </div>
+                <div id="title__line"></div>
+                <img id="coin--img" src="../images/ada.png" />
+                <div id="contents--support">기술력 끝판왕</div>
+                <div id="contents--div">
+                    <p class="subtitle">당신의 투자 성향은?</p>
+                    <p>최근의 <span class="text--red">트렌드</span>를 반영하는 투자를 선호한다.</p>
+                    <p><span class="text--red">경제 관련 뉴스에</span> 귀를 기울이려고 노력한다.</p>
+                    <p><span class="text--red">흐름에</span> 올라타는 것이 좋은 투자라고 생각한다.</p>
+                    <p class="subtitle">에이다란?</p>
+                    <p>2세대 블록체인 이더리움을 넘는 <span class="text--red">3세대 표방</span></p>
+                    <p>매우 <span class="text--red">복잡한 설계로 개발이 다소 느리지만 잠재력이 큼</span></p>
+                    <p>기술력을 인정받으며 최근 <span class="text--red">3개월 간 10배의 상승 기록중</span></p>
+                    <p>최근 1년 상승률 : <span class="text--red">약 1500%</span></p>
+                    <p class="subtitle">어디서 살 수 있나?</p>
+                    <p>암호화폐 거래소 <span class="text--red text--big">'고팍스'</span> - <a href="https://bit.ly/3u10t8y">https://bit.ly/3u10t8y</a></p>
+                    <p>신규 계좌 개설 필요없이 <span class="text--red">기존 계좌 사용 가능</span></p>
+                    <p>해당 링크로 가입 시 <span class="text--red">5,000원 상당의 코인 or 원화 지급</span></p>
+                </div>
+                <div id="another__coin">다른 코인 결과보기</div>
+                <div id="another__coin--div">
+                    <p class="another__coin__coins" onclick="location.href='./btc.html'">비트코인</p>
+                    <p class="another__coin__coins" onclick="location.href='./eth.html'">이더리움</p>
+                    <p class="another__coin__coins" onclick="location.href='./xrp.html'">리플</p>
+                    <p class="another__coin__coins" onclick="location.href='./doge.html'">도지</p>
+                </div>
+                <div id="faq">
+                    <p class="subtitle">암호화폐 FAQ</p>
+                    <p>* 암호화폐는 주식과 다르게 0.1개, 0.0001개 등 분할하여 구매가 가능합니다. ex. 0.3 비트코인</p>
+                    <p>* 암호화폐 시장은 장 마감 없이 24시간 돌아갑니다.</p>
+                    <p>* 암호화폐로 인한 수익에 대한 세금은 2021년까지는 없으며 2022년 1월 1일부터 부과 예정입니다.</p>
+                </div>
+                <p id="share__coment">친구에게 결과 공유하기</p>
+                <div id="share__div">
+                    <div id="share">
+                        <img src="../images/link_copy_icon.png" id="copy_link" />
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcointest84454.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                            <img src="../images/facebook_icon.png" />
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=TEXT&url=https://cointest84454.github.io/">
+                            <img src="../images/twitter_icon.png">
+                        </a>
+                        <a href="javascript:;" id="kakao-link-btn">
+                            <img src="../images/kakao_icon.png" width="10px" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

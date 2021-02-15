@@ -1,46 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" style="height:100%;">
+<html lang="en" style="height:100%;font-size: 62.5%;">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../index.css" rel="stylesheet">
     <link href="./result.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <img src="https://cointest84454.github.io/cointest/main.png" style="display:none;" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Kakao.init('2af871559731a9008ebe3658019028e6');
+            Kakao.Link.createDefaultButton({
+                container: '#kakao-link-btn',
+                objectType: 'feed',
+                content: {
+                    title: document.title,
+                    description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
+                    imageUrl: "https://cointest84454.github.io/main.png",
+                    link: {
+                        webUrl: document.location.href,
+                        mobileWebUrl: document.location.href
+                    }
+                },
+                buttons: [{
+                    title: '테스트 결과 확인하기',
+                    link: {
+                        mobileWebUrl: document.location.href,
+                        webUrl: document.location.href
+                    }
+                }]
+            });
+
+            function copyToClipboard(val) {
+                var t = document.createElement("textarea");
+                document.body.appendChild(t);
+                t.value = val;
+                t.select();
+                document.execCommand('copy');
+                document.body.removeChild(t);
+            }
+            $('#copy_link').click(function() {
+                copyToClipboard(window.location.href);
+            });
+        })
+    </script>
 </head>
 
 <body>
-    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <img src="https://cointest84454.github.io/cointest/main.png" style="display:none;">
-    <a href="javascript:;" id="kakao-link-btn" style="display:none;">
-        <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_small.png" width="10px" />
-    </a>
-
-    <script type="text/javascript">
-        Kakao.init('2af871559731a9008ebe3658019028e6');
-        Kakao.Link.createDefaultButton({
-            container: '#kakao-link-btn',
-            objectType: 'feed',
-            content: {
-                title: document.title,
-                description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
-                imageUrl: "https://cointest84454.github.io/main.png",
-                link: {
-                    webUrl: document.location.href,
-                    mobileWebUrl: document.location.href
-                }
-            },
-            buttons: [{
-                title: '테스트 결과 확인하기',
-                link: {
-                    mobileWebUrl: document.location.href,
-                    webUrl: document.location.href
-                }
-            }]
-        });
-    </script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v9.0" nonce="w9zn4HLf"></script>
 
     <div class="container-fluid">
         <div class="row">
@@ -66,7 +80,34 @@
                     <p>신규 계좌 개설 필요없이 <span class="text--red">기존 계좌 사용 가능</span></p>
                     <p>해당 링크로 가입 시 <span class="text--red">5,000원 상당의 코인 or 원화 지급</span></p>
                 </div>
-                <div id="another_coin">다른 코인 결과보기</div>
+                <div id="another__coin">다른 코인 결과보기</div>
+                <div id="another__coin--div">
+                    <p class="another__coin__coins" onclick="location.href='./btc.html'">비트코인</p>
+                    <p class="another__coin__coins" onclick="location.href='./eth.html'">이더리움</p>
+                    <p class="another__coin__coins" onclick="location.href='./xrp.html'">리플</p>
+                    <p class="another__coin__coins" onclick="location.href='./doge.html'">도지</p>
+                </div>
+                <div id="faq">
+                    <p class="subtitle">암호화폐 FAQ</p>
+                    <p>* 암호화폐는 주식과 다르게 0.1개, 0.0001개 등 분할하여 구매가 가능합니다. ex. 0.3 비트코인</p>
+                    <p>* 암호화폐 시장은 장 마감 없이 24시간 돌아갑니다.</p>
+                    <p>* 암호화폐로 인한 수익에 대한 세금은 2021년까지는 없으며 2022년 1월 1일부터 부과 예정입니다.</p>
+                </div>
+                <p id="share__coment">친구에게 결과 공유하기</p>
+                <div id="share__div">
+                    <div id="share">
+                        <img src="../images/link_copy_icon.png" id="copy_link" />
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcointest84454.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                            <img src="../images/facebook_icon.png" />
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=TEXT&url=https://cointest84454.github.io/">
+                            <img src="../images/twitter_icon.png">
+                        </a>
+                        <a href="javascript:;" id="kakao-link-btn">
+                            <img src="../images/kakao_icon.png" width="10px" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

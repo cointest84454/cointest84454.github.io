@@ -3,32 +3,12 @@
     .process {
         width: 100%;
     }
-    .process__answer--first,
-    .process__answer--second {
-        font-size: 90%;
-    }
-    .process__header__title {
-        font-size: 95%;
-    }
-    .process__header__Qmark {
-        font-size: 133%;
-    }
 }
 
 @media screen and (min-width: 768px) {
     #main--div,
     .process {
         width: 80%;
-    }
-    .process__answer--first,
-    .process__answer--second {
-        font-size: 90%;
-    }
-    .process__header__title {
-        font-size: 110%;
-    }
-    .process__header__Qmark {
-        font-size: 177%;
     }
 }
 
@@ -37,33 +17,12 @@
     .process {
         width: 80%;
     }
-    .process__answer--first,
-    .process__answer--second {
-        font-size: 184%;
-    }
-    .process__header__title {
-        font-size: 203%;
-    }
-    .process__header__Qmark {
-        font-size: 213%;
-    }
 }
 
 @media screen and (min-width: 1170px) {
     #main--div,
     .process {
         width: 28%;
-    }
-    .process__answer--first,
-    .process__answer--second {
-        font-size: 124%;
-        line-height: 388%;
-    }
-    .process__header__title {
-        font-size: 129%;
-    }
-    .process__header__Qmark {
-        font-size: 174%;
     }
 }
 
@@ -72,16 +31,10 @@
     .process {
         width: 100%;
     }
-    .process__answer--first,
-    .process__answer--second {
-        font-size: 79%;
-    }
-    .process__header__title {
-        font-size: 90%;
-    }
-    .process__header__Qmark {
-        font-size: 118%;
-    }
+}
+
+* {
+    font-family: 'NanumSquare', sans-serif !important;
 }
 
 body {
@@ -101,7 +54,7 @@ body {
 #main--div {
     margin: 0 auto;
     background: white;
-    height: 100%;
+    min-height: 100%;
 }
 
 #main--img {
@@ -124,21 +77,20 @@ body {
 }
 
 .process__header__Qmark {
-    font-family: 'Noto Sans KR', sans-serif;
     color: rgb(247, 147, 27);
     font-weight: bold;
     /* font-size: 30px; */
     width: 100%;
     text-align: center;
     margin-top: 20%;
+    font-size: 2.6rem;
 }
 
 .process__header__title {
-    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     text-align: center;
-    font-family: 'Nanum Barun Gothic';
     margin-bottom: 40%;
+    font-size: 2rem;
 }
 
 .process__answer--inner-text {
@@ -154,12 +106,12 @@ body {
     margin: 0 auto 3% 50%;
     transform: translate(-50%, 0%);
     text-align: center;
-    font-family: 'Nanum Barun Gothic';
     cursor: pointer;
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 20%;
+    font-size: 1.8rem;
 }
 
 .process__answer--second {
@@ -170,10 +122,10 @@ body {
     margin: 0 auto 3% 50%;
     transform: translate(-50%, 0%);
     text-align: center;
-    font-family: 'Nanum Barun Gothic';
     cursor: pointer;
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 9%;
+    font-size: 1.8rem;
 }
