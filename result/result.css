@@ -90,7 +90,7 @@ body {
 #coin--img {
     z-index: 99999;
     position: absolute;
-    top: 16.3rem;
+    top: 15.6rem;
     left: 50%;
     transform: translate(-50%, 0);
     background-color: white;
