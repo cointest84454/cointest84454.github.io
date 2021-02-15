@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%;font-size: 62.5%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./result.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <img src="https://cointest84454.github.io/main.png" style="display:none;" />
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            Kakao.init('2af871559731a9008ebe3658019028e6');
+            Kakao.Link.createDefaultButton({
+                container: '#kakao-link-btn',
+                objectType: 'feed',
+                content: {
+                    title: document.title,
+                    description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
+                    imageUrl: "https://cointest84454.github.io/main.png",
+                    link: {
+                        webUrl: document.location.href,
+                        mobileWebUrl: document.location.href
+                    }
+                },
+                buttons: [{
+                    title: '테스트 결과 확인하기',
+                    link: {
+                        mobileWebUrl: document.location.href,
+                        webUrl: document.location.href
+                    }
+                }]
+            });
+
+            function copyToClipboard(val) {
+                var t = document.createElement("textarea");
+                document.body.appendChild(t);
+                t.value = val;
+                t.select();
+                document.execCommand('copy');
+                document.body.removeChild(t);
+            }
+            $('#copy_link').click(function() {
+                copyToClipboard(window.location.href);
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v9.0" nonce="w9zn4HLf"></script>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="process">
+                <div id="result__title__container">
+                    <img id="result__title" src="../images/result_title.png" />
+                </div>
+                <div id="title__line"></div>
+                <div id="coin__img--container">
+                    <img id="coin--img" src="../images/btc.png" />
+                </div>
+                <div id="contents--support">암호화폐의 원조</div>
+                <div id="contents--div">
+                    <p class="subtitle">당신의 투자 성향은?</p>
+                    <p>새로운 도전 자체를 싫어하는 것은 아니지만 <span class="text--red">어느 정도의 보험은 있어야 한다.</span></p>
+                    <p>투자 할 때 <span class="text--red">역사와 규모</span>를 중요하게 고려한다.</p>
+                    <p>시장은 결국 <span class="text--red">가장 강한 1위 </span>하나가 제패할 것이라고 생각한다.</p>
+                    <p class="subtitle">비트코인이란?</p>
+                    <p>최초의 암호화폐이자 암호화폐 <span class="text--red"> 시가총액 1위</span></p>
+                    <p>금융 기관 없이 개인 간 <span class="text--red">빠르고 안전한 거래</span>를 실현</p>
+                    <p><span class="text--red">제한된 발행량</span>으로 인해 점점 희소가치 상승중</p>
+                    <p>최근 1년 상승률 : <span class="text--red">약 410%</span></p>
+                    <p class="subtitle">어디서 살 수 있나?</p>
+                    <p>암호화폐 거래소 <span class="text--red text--big">'고팍스'</span> - <a href="https://bit.ly/3u10t8y">https://bit.ly/3u10t8y</a></p>
+                    <p>신규 계좌 개설 필요없이 <span class="text--red">기존 계좌 사용 가능</span></p>
+                    <p>해당 링크로 가입 시 <span class="text--red">5,000원 상당의 코인 or 원화 지급</span></p>
+                </div>
+                <div id="another__coin">다른 코인 결과보기</div>
+                <div id="another__coin--div">
+                    <p class="another__coin__coins" onclick="location.href='./854542.html'">이더리움</p>
+                    <p class="another__coin__coins" onclick="location.href='./877486.html'">리플</p>
+                    <p class="another__coin__coins" onclick="location.href='./546354.html'">에이다</p>
+                    <p class="another__coin__coins" onclick="location.href='./857634.html'">도지</p>
+                </div>
+                <div id="faq">
+                    <p class="subtitle">암호화폐 FAQ</p>
+                    <p>* 암호화폐는 주식과 다르게 0.1개, 0.0001개 등 분할하여 구매가 가능합니다. ex. 0.3 비트코인</p>
+                    <p>* 암호화폐 시장은 장 마감 없이 24시간 돌아갑니다.</p>
+                    <p>* 암호화폐로 인한 수익에 대한 세금은 2021년까지는 없으며 2022년 1월 1일부터 부과 예정입니다.</p>
+                </div>
+                <p id="share__coment">친구에게 결과 공유하기</p>
+                <div id="share__div">
+                    <div id="share">
+                        <img src="../images/link_copy_icon.png" id="copy_link" />
+                        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcointest84454.github.io%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+                            <img src="../images/facebook_icon.png" />
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?text=TEXT&url=https://cointest84454.github.io/">
+                            <img src="../images/twitter_icon.png">
+                        </a>
+                        <a href="javascript:;" id="kakao-link-btn">
+                            <img src="../images/kakao_icon.png" width="10px" />
+                        </a>
+                    </div>
+                </div>
+                <!-- <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-NzucO3vYEUJfCNZc" data-ad-width="$('.process').width()" data-ad-height="90/728*$('.process').width()"></ins>
+                <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
