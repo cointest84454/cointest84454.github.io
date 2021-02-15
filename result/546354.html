@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>비트코인 테스트</title>
+    <link rel="icon" href="./images/logo.png">
     <link href="./result.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -48,7 +49,7 @@
             $('#copy_link').click(function() {
                 copyToClipboard(window.location.href);
             });
-
+            $("ins iframe").contents().find("img").attr("style", "display:none");
             setTimeout(function() {
                 var wid = $(".process").width();
                 var bae = 728 / 90;
@@ -60,9 +61,11 @@
                 $("ins iframe").contents().find("img").attr("height", he)
 
                 $("ins [type=button]").attr("style", "display:none");
-            }, 300)
+                $("ins iframe").contents().find("img").attr("style", "display:block");
+            }, 400)
 
             $(window).resize(function() {
+                $("ins iframe").contents().find("img").attr("style", "display:none");
                 var wid = $(".process").width();
                 var bae = 728 / 90;
                 var he = wid / bae;
@@ -73,6 +76,7 @@
                 $("ins iframe").contents().find("img").attr("height", he)
 
                 $("ins [type=button]").attr("style", "display:none");
+                $("ins iframe").contents().find("img").attr("style", "display:block");
             })
         })
     </script>
