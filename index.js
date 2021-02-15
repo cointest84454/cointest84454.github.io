@@ -71,15 +71,15 @@ $(document).ready(function() {
             var reaultArr = resultObjArr.map(item => item.name);
 
             if (reaultArr.indexOf("btc") > -1) { //btc
-                location.href = './result/btc.html'
+                location.href = './result/864833.html'
             } else if (reaultArr.indexOf("eth") > -1) { //eth
-                location.href = './result/eth.html'
+                location.href = './result/854542.html'
             } else if (reaultArr.indexOf("xrp") > -1) { //xrp
-                location.href = './result/xrp.html'
+                location.href = './result/877486.html'
             } else if (reaultArr.indexOf("ada") > -1) { //ada
-                location.href = './result/ada.html'
+                location.href = './result/546354.html'
             } else { //doge
-                location.href = './result/doge.html'
+                location.href = './result/857634.html'
             }
         }
     })
@@ -143,15 +143,15 @@ $(document).ready(function() {
             var reaultArr = resultObjArr.map(item => item.name);
 
             if (reaultArr.indexOf("btc") > -1) { //btc
-                location.href = './result/btc.html'
+                location.href = './result/864833.html'
             } else if (reaultArr.indexOf("eth") > -1) { //eth
-                location.href = './result/eth.html'
+                location.href = './result/854542.html'
             } else if (reaultArr.indexOf("xrp") > -1) { //xrp
-                location.href = './result/xrp.html'
+                location.href = './result/877486.html'
             } else if (reaultArr.indexOf("ada") > -1) { //ada
-                location.href = './result/ada.html'
+                location.href = './result/546354.html'
             } else { //doge
-                location.href = './result/doge.html'
+                location.href = './result/857634.html'
             }
         }
     })
