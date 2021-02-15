@@ -49,15 +49,17 @@
                 copyToClipboard(window.location.href);
             });
 
-            setTimeout(function() {
+            ssetTimeout(function() {
                 var wid = $(".process").width();
                 var bae = 728 / 90;
                 var he = wid / bae;
                 $("ins, ins *").width(wid);
                 $("ins, ins *").attr("style", "min-width:" + wid + "px");
-                $("ins iframe").contents().find("img").attr("width", wid)
+                $("ins iframe").contents().find("img").attr("width", wid);
                 $("ins, ins *").height(he)
                 $("ins iframe").contents().find("img").attr("height", he)
+
+                $("ins [type=button]").attr("style", "display:none");
             }, 300)
 
             $(window).resize(function() {
@@ -69,6 +71,8 @@
                 $("ins iframe").contents().find("img").attr("width", wid)
                 $("ins, ins *").height(he)
                 $("ins iframe").contents().find("img").attr("height", he)
+
+                $("ins [type=button]").attr("style", "display:none");
             })
         })
     </script>
