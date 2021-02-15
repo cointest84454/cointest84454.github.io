@@ -57,6 +57,7 @@ $(document).ready(function() {
         $($(".process")[index]).css("display", "none");
         if (index < 9) $($(".process")[index + 1]).css("display", "block");
         if (index == 9) {
+            $(".loading").css("display", "block");
             let sortobj = [];
             for (let coin in coins) {
                 sortobj.push({ name: coin, score: coins[coin] });
@@ -69,18 +70,21 @@ $(document).ready(function() {
             var resultObjArr = sortobj.filter(item => item.score == MaxScore);
 
             var reaultArr = resultObjArr.map(item => item.name);
+            setTimeout(function() {
+                $(".loading").css("display", "none");
 
-            if (reaultArr.indexOf("btc") > -1) { //btc
-                location.href = './result/864833.html'
-            } else if (reaultArr.indexOf("eth") > -1) { //eth
-                location.href = './result/854542.html'
-            } else if (reaultArr.indexOf("xrp") > -1) { //xrp
-                location.href = './result/877486.html'
-            } else if (reaultArr.indexOf("ada") > -1) { //ada
-                location.href = './result/546354.html'
-            } else { //doge
-                location.href = './result/857634.html'
-            }
+                if (reaultArr.indexOf("btc") > -1) { //btc
+                    location.href = './result/864833.html'
+                } else if (reaultArr.indexOf("eth") > -1) { //eth
+                    location.href = './result/854542.html'
+                } else if (reaultArr.indexOf("xrp") > -1) { //xrp
+                    location.href = './result/877486.html'
+                } else if (reaultArr.indexOf("ada") > -1) { //ada
+                    location.href = './result/546354.html'
+                } else { //doge
+                    location.href = './result/857634.html'
+                }
+            }, 3000)
         }
     })
 
@@ -129,6 +133,7 @@ $(document).ready(function() {
         $($(".process")[index]).css("display", "none");
         if (index < 9) $($(".process")[index + 1]).css("display", "block");
         if (index == 9) {
+            $(".loading").css("display", "block");
             let sortobj = [];
             for (let coin in coins) {
                 sortobj.push({ name: coin, score: coins[coin] });
@@ -141,18 +146,21 @@ $(document).ready(function() {
             var resultObjArr = sortobj.filter(item => item.score == MaxScore);
 
             var reaultArr = resultObjArr.map(item => item.name);
+            setTimeout(function() {
+                $(".loading").css("display", "none");
 
-            if (reaultArr.indexOf("btc") > -1) { //btc
-                location.href = './result/864833.html'
-            } else if (reaultArr.indexOf("eth") > -1) { //eth
-                location.href = './result/854542.html'
-            } else if (reaultArr.indexOf("xrp") > -1) { //xrp
-                location.href = './result/877486.html'
-            } else if (reaultArr.indexOf("ada") > -1) { //ada
-                location.href = './result/546354.html'
-            } else { //doge
-                location.href = './result/857634.html'
-            }
+                if (reaultArr.indexOf("btc") > -1) { //btc
+                    location.href = './result/864833.html'
+                } else if (reaultArr.indexOf("eth") > -1) { //eth
+                    location.href = './result/854542.html'
+                } else if (reaultArr.indexOf("xrp") > -1) { //xrp
+                    location.href = './result/877486.html'
+                } else if (reaultArr.indexOf("ada") > -1) { //ada
+                    location.href = './result/546354.html'
+                } else { //doge
+                    location.href = './result/857634.html'
+                }
+            }, 3000)
         }
     })
 })
