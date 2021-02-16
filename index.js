@@ -74,13 +74,13 @@ $(document).ready(function() {
                 $(".loading").css("display", "none");
 
                 if (reaultArr.indexOf("btc") > -1) { //btc
-                    location.href = './result/864833.html'
+                    location.href = './result/864833'
                 } else if (reaultArr.indexOf("eth") > -1) { //eth
-                    location.href = './result/854542.html'
+                    location.href = './result/854542'
                 } else if (reaultArr.indexOf("xrp") > -1) { //xrp
-                    location.href = './result/877486.html'
+                    location.href = './result/877486'
                 } else if (reaultArr.indexOf("ada") > -1) { //ada
-                    location.href = './result/546354.html'
+                    location.href = './result/546354'
                 } else { //doge
                     location.href = './result/857634.html'
                 }
@@ -150,15 +150,15 @@ $(document).ready(function() {
                 $(".loading").css("display", "none");
 
                 if (reaultArr.indexOf("btc") > -1) { //btc
-                    location.href = './result/864833.html'
+                    location.href = './result/864833'
                 } else if (reaultArr.indexOf("eth") > -1) { //eth
-                    location.href = './result/854542.html'
+                    location.href = './result/854542'
                 } else if (reaultArr.indexOf("xrp") > -1) { //xrp
-                    location.href = './result/877486.html'
+                    location.href = './result/877486'
                 } else if (reaultArr.indexOf("ada") > -1) { //ada
-                    location.href = './result/546354.html'
+                    location.href = './result/546354'
                 } else { //doge
-                    location.href = './result/857634.html'
+                    location.href = './result/857634'
                 }
             }, 3000)
         }
