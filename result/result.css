@@ -154,6 +154,7 @@ body {
     border-radius: 1.9rem;
     color: white;
     margin: 1.8rem auto 0;
+    cursor: pointer;
 }
 
 .another__coin__coins {
