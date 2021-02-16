@@ -10,9 +10,9 @@
     <link href="./result.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script data-ad-client="ca-pub-8334266006703599" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
+    <script src="./result.js"></script>
     <img src="https://cointest84454.github.io/main.png" style="display:none;" />
 
     <script type="text/javascript">
@@ -49,7 +49,35 @@
             }
             $('#copy_link').click(function() {
                 copyToClipboard(window.location.href);
+                alert("링크가 복사되었습니다")
             });
+
+            var acodian = {
+
+                click: function(target) {
+                    var _self = this,
+                        $target = $(target)
+                    $target.on('click', function() {
+                        if ($(this).next('dd').css('display') == 'none') {
+                            $('dd').slideUp();
+                            _self.onremove($target);
+
+                            $(this).addClass('on');
+                            $(this).next().slideDown();
+                        } else {
+                            $('dd').slideUp();
+                            _self.onremove($target);
+
+                        }
+                    });
+                },
+                onremove: function($target) {
+                    $target.removeClass('on');
+                }
+
+            };
+
+            acodian.click('dt');
 
             // setTimeout(function() {
             //     var wid = $(".process").width();
@@ -108,13 +136,15 @@
                     <p>신규 계좌 개설 필요없이 <span class="text--red">기존 계좌 사용 가능</span></p>
                     <p>해당 링크로 가입 시 <span class="text--red">5,000원 상당의 코인 or 원화 지급</span></p>
                 </div>
-                <div id="another__coin">다른 코인 결과보기</div>
-                <div id="another__coin--div">
-                    <p class="another__coin__coins" onclick="location.href='./864833.html'">비트코인</p>
-                    <p class="another__coin__coins" onclick="location.href='./854542.html'">이더리움</p>
-                    <p class="another__coin__coins" onclick="location.href='./877486.html'">리플</p>
-                    <p class="another__coin__coins" onclick="location.href='./546354.html'">에이다</p>
-                </div>
+                <dl>
+                    <dt id="another__coin">다른 코인 결과보기</dt>
+                    <dd id="another__coin--div">
+                        <p class="another__coin__coins" onclick="location.href='./864833'">비트코인</p>
+                        <p class="another__coin__coins" onclick="location.href='./854542'">이더리움</p>
+                        <p class="another__coin__coins" onclick="location.href='./877486'">리플</p>
+                        <p class="another__coin__coins" onclick="location.href='./546354'">에이다</p>
+                    </dd>
+                </dl>
                 <div id="faq">
                     <p class="subtitle">암호화폐 FAQ</p>
                     <p>* 암호화폐는 주식과 다르게 0.1개, 0.0001개 등 분할하여 구매가 가능합니다. ex. 0.3 비트코인</p>
