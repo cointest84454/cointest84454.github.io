@@ -149,6 +149,7 @@ body {
 #content--div {
     position: absolute;
     top: 16rem;
+    width: 100%;
 }
 
 #content {
