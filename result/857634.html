@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비트코인 테스트</title>
-    <link rel="icon" href="../images/logo.png">
+    <link rel="icon" href="./images/logo.png">
     <link href="./result.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
@@ -90,32 +90,9 @@
             };
 
             acodian.click('dt');
+            $("#back--img").height($("#content").height() * 2.15);
+            $("#back--img").width("95%");
 
-            // setTimeout(function() {
-            //     var wid = $(".process").width();
-            //     var bae = 728 / 90;
-            //     var he = wid / bae;
-            //     $("ins, ins *").width(wid);
-            //     $("ins, ins *").attr("style", "min-width:" + wid + "px");
-            //     $("ins iframe").contents().find("img").attr("width", wid);
-            //     $("ins, ins *").height(he)
-            //     $("ins iframe").contents().find("img").attr("height", he)
-
-            //     $("ins [type=button]").attr("style", "display:none");
-            // }, 400)
-
-            // $(window).resize(function() {
-            //     var wid = $(".process").width();
-            //     var bae = 728 / 90;
-            //     var he = wid / bae;
-            //     $("ins, ins *").width(wid);
-            //     $("ins, ins *").attr("style", "min-width:" + wid + "px");
-            //     $("ins iframe").contents().find("img").attr("width", wid)
-            //     $("ins, ins *").height(he)
-            //     $("ins iframe").contents().find("img").attr("height", he)
-
-            //     $("ins [type=button]").attr("style", "display:none");
-            // })
         })
     </script>
 
@@ -131,33 +108,69 @@
                 <div id="result__title__container">
                     <img id="result__title" src="../images/result_title.png" onclick="location.href='https:\/\/cointest84454.github.io'" />
                 </div>
-                <div id="title__line"></div>
-                <img id="coin--img" src="../images/doge.png" />
-                <div id="contents--support">농담과 진담 사이</div>
-                <div id="contents--div">
-                    <p class="subtitle">당신의 투자 성향은?</p>
-                    <p><span class="text--red">직감에 따른 결정</span>의 결과는 보통 괜찮은 편이었다.</p>
-                    <p>투자의 묘미는 <span class="text--red">큰 변동성</span>에 있다고 생각한다.</p>
-                    <p>투자보다는 <span class="text--red">도박</span>에 소질이 있을지도 모른다.</p>
-                    <p class="subtitle">도지코인이란?</p>
-                    <p>암호화폐 시장의 열풍을 풍자하기 위해 만들어진 <span class="text--red">장난식 코인</span></p>
-                    <p>아프리카의 별풍선과 같이 <span class="text--red">팁 형식</span>으로 사용됨</p>
-                    <p>테슬라 CEO <span class="text--red">일론 머스크</span>가 자주 트위터에 언급하며 애정을 보임</p>
-                    <p>최근 1년 상승률 : <span class="text--red">약 2200%</span></p>
-                    <p class="subtitle">어디서 살 수 있나?</p>
-                    <p>암호화폐 거래소 <span class="text--red text--big">'고팍스'</span> - <a href="https://bit.ly/3u10t8y">https://bit.ly/3u10t8y</a></p>
-                    <p>신규 계좌 개설 필요없이 <span class="text--red">기존 계좌 사용 가능</span></p>
-                    <p>해당 링크로 가입 시 <span class="text--red">5,000원 상당의 코인 or 원화 지급</span></p>
+                <!--                   -->
+                <div style="text-align: center;">
+                    <img id="back--img" src="../images/result_background.png">
                 </div>
-                <dl>
-                    <dt id="another__coin">다른 코인 결과보기</dt>
-                    <dd id="another__coin--div">
-                        <p class="another__coin__coins" onclick="location.href='./864833'">비트코인</p>
-                        <p class="another__coin__coins" onclick="location.href='./854542'">이더리움</p>
-                        <p class="another__coin__coins" onclick="location.href='./877486'">리플</p>
-                        <p class="another__coin__coins" onclick="location.href='./546354'">에이다</p>
-                    </dd>
-                </dl>
+                <div id="content--div">
+                    <p id="your_coin">당신의 코인은</p>
+                    <div id="title--img_cover">
+                        <img src="../images/btc.png" id="title--img">
+                    </div>
+                    <div id="content">
+
+                        <h2 class="subtitle">· 당신의 투자 성향은?</h2>
+                        <p>
+                            <span class="text--brown">직감에 따른 결정</span>의 결과는
+                            <br> 보통 괜찮은 편이었다.</span>
+                        </p>
+                        <p>
+                            투자의 묘미는
+                            <br><span class="text--brown">큰 변동성</span>에 있다고 생각한다.
+                        </p>
+                        <h2 class="subtitle">· 도지코인이란?</h2>
+                        <p>
+                            암호화폐 시장의 열풍을
+                            <br>풍자하기 위해 만들어진 <span class="text--brown">장난식 코인</span>
+                        </p>
+                        <p>
+                            아프리카의 별풍선과 같이
+                            <br><span class="text--brown">팁 형식</span>으로 사용됨
+                        </p>
+                        <p>
+                            테슬라 CEO <span class="text--brown">일론 머스크</span>가
+                            <br>자주 트위터에 언급하며 애정을 보임
+                        </p>
+                        <p>
+                            최근 1년 상승률 : <span class="text--brown">약 2200%</span>
+                        </p>
+                    </div>
+                    <div id="footer">
+                        <p id="buy_coin">도지코인 구매해보기</p>
+                        <p style="margin-top: 3rem;">
+                            해당 링크로 가입 시
+                            <br> <span class="text--red">5,000원 상당의 코인 or 원화 지급</span>
+                        </p>
+                        <p>
+                            신규 계좌 개설 필요없이
+                            <br> <span class="text--red">기존 계좌 사용 가능</span>
+                        </p>
+                    </div>
+                </div>
+                <!--                   -->
+                <div style="display: flex;justify-content: center;align-items:initial">
+                    <p id="return_main" style="margin-top: 2.8rem;width: 100%;">테스트 다시하기</p>
+                    <dl>
+
+                        <dt id="another__coin">다른 코인 결과보기</dt>
+                        <dd id="another__coin--div">
+                            <p class="another__coin__coins" onclick="location.href='./864833'">비트코인</p>
+                            <p class="another__coin__coins" onclick="location.href='./854542'">이더리움</p>
+                            <p class="another__coin__coins" onclick="location.href='./877486'">리플</p>
+                            <p class="another__coin__coins" onclick="location.href='./546354'">에이다</p>
+                        </dd>
+                    </dl>
+                </div>
                 <div id="faq">
                     <p class="subtitle">암호화폐 FAQ</p>
                     <p>* 암호화폐는 주식과 다르게 0.1개, 0.0001개 등 분할하여 구매가 가능합니다. ex. 0.3 비트코인</p>
@@ -179,6 +192,7 @@
                         </a>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

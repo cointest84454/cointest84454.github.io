@@ -90,35 +90,9 @@
             };
 
             acodian.click('dt');
-            // $("ins iframe").contents().find("img").attr("style", "display:none");
-            // setTimeout(function() {
-            //     var wid = $(".process").width();
-            //     var bae = 728 / 90;
-            //     var he = wid / bae;
-            //     $("ins, ins *").width(wid);
-            //     $("ins, ins *").attr("style", "min-width:" + wid + "px");
-            //     $("ins iframe").contents().find("img").attr("width", wid);
-            //     $("ins, ins *").height(he)
-            //     $("ins iframe").contents().find("img").attr("height", he)
+            $("#back--img").height($("#content").height() * 2.15);
+            $("#back--img").width("95%");
 
-            //     $("ins [type=button]").attr("style", "display:none");
-            //     $("ins iframe").contents().find("img").attr("style", "display:block");
-            // }, 400)
-
-            // $(window).resize(function() {
-            //     $("ins iframe").contents().find("img").attr("style", "display:none");
-            //     var wid = $(".process").width();
-            //     var bae = 728 / 90;
-            //     var he = wid / bae;
-            //     $("ins, ins *").width(wid);
-            //     $("ins, ins *").attr("style", "min-width:" + wid + "px");
-            //     $("ins iframe").contents().find("img").attr("width", wid)
-            //     $("ins, ins *").height(he)
-            //     $("ins iframe").contents().find("img").attr("height", he)
-
-            //     $("ins [type=button]").attr("style", "display:none");
-            //     $("ins iframe").contents().find("img").attr("style", "display:block");
-            // })
         })
     </script>
 
@@ -134,33 +108,73 @@
                 <div id="result__title__container">
                     <img id="result__title" src="../images/result_title.png" onclick="location.href='https:\/\/cointest84454.github.io'" />
                 </div>
-                <div id="title__line"></div>
-                <img id="coin--img" src="../images/ada.png" />
-                <div id="contents--support">기술력 끝판왕</div>
-                <div id="contents--div">
-                    <p class="subtitle">당신의 투자 성향은?</p>
-                    <p>최근의 <span class="text--red">트렌드</span>를 반영하는 투자를 선호한다.</p>
-                    <p><span class="text--red">경제 관련 뉴스에</span> 귀를 기울이려고 노력한다.</p>
-                    <p><span class="text--red">흐름에</span> 올라타는 것이 좋은 투자라고 생각한다.</p>
-                    <p class="subtitle">에이다란?</p>
-                    <p>2세대 블록체인 이더리움을 넘는 <span class="text--red">3세대 표방</span></p>
-                    <p>매우 <span class="text--red">복잡한 설계로 개발이 다소 느리지만 잠재력이 큼</span></p>
-                    <p>기술력을 인정받으며 최근 <span class="text--red">3개월 간 10배의 상승 기록중</span></p>
-                    <p>최근 1년 상승률 : <span class="text--red">약 1500%</span></p>
-                    <p class="subtitle">어디서 살 수 있나?</p>
-                    <p>암호화폐 거래소 <span class="text--red text--big">'고팍스'</span> - <a href="https://bit.ly/3u10t8y">https://bit.ly/3u10t8y</a></p>
-                    <p>신규 계좌 개설 필요없이 <span class="text--red">기존 계좌 사용 가능</span></p>
-                    <p>해당 링크로 가입 시 <span class="text--red">5,000원 상당의 코인 or 원화 지급</span></p>
+                <!--                   -->
+                <div style="text-align: center;">
+                    <img id="back--img" src="../images/result_background.png">
                 </div>
-                <dl>
-                    <dt id="another__coin">다른 코인 결과보기</dt>
-                    <dd id="another__coin--div">
-                        <p class="another__coin__coins" onclick="location.href='./864833'">비트코인</p>
-                        <p class="another__coin__coins" onclick="location.href='./854542'">이더리움</p>
-                        <p class="another__coin__coins" onclick="location.href='./877486'">리플</p>
-                        <p class="another__coin__coins" onclick="location.href='./857634'">도지</p>
-                    </dd>
-                </dl>
+                <div id="content--div">
+                    <p id="your_coin">당신의 코인은</p>
+                    <div id="title--img_cover">
+                        <img src="../images/btc.png" id="title--img">
+                    </div>
+                    <div id="content">
+
+                        <h2 class="subtitle">· 당신의 투자 성향은?</h2>
+                        <p>
+                            최근의 <span class="text--brown">트렌드를 반영</span>하는
+                            <br>투자를 선호한다.
+                        </p>
+                        <p>
+                            <span class="text--brown">경제 관련 뉴스</span>에
+                            <br>귀를 기울이려고 노력한다.
+                        </p>
+                        <p>
+                            <span class="text--brown">흐름</span>에 올라타는 것이
+                            <br>좋은 투자라고 생각한다.
+                        </p>
+                        <h2 class="subtitle">· 에이다란?</h2>
+                        <p>
+                            2세대 블록체인 이더리움을 넘는
+                            <br><span class="text--brown">3세대 표방</span>
+                        </p>
+                        <p>
+                            매우 <span class="text--brown">복잡한 설계</span>로
+                            <br>개발이 다소 느리지만 잠재력이 큼
+                        </p>
+                        <p>
+                            기술력을 인정받으며
+                            <br>최근 <span class="text--brown">3개월 간 10배의 상승</span> 기록중
+                        </p>
+                        <p>
+                            최근 1년 상승률 : <span class="text--brown">약 1500%</span>
+                        </p>
+                    </div>
+                    <div id="footer">
+                        <p id="buy_coin">에이다 구매해보기</p>
+                        <p style="margin-top: 3rem;">
+                            해당 링크로 가입 시
+                            <br> <span class="text--red">5,000원 상당의 코인 or 원화 지급</span>
+                        </p>
+                        <p>
+                            신규 계좌 개설 필요없이
+                            <br> <span class="text--red">기존 계좌 사용 가능</span>
+                        </p>
+                    </div>
+                </div>
+                <!--                   -->
+                <div style="display: flex;justify-content: center;align-items:initial">
+                    <p id="return_main" style="margin-top: 2.8rem;width: 100%;">테스트 다시하기</p>
+                    <dl>
+
+                        <dt id="another__coin">다른 코인 결과보기</dt>
+                        <dd id="another__coin--div">
+                            <p class="another__coin__coins" onclick="location.href='./864833'">비트코인</p>
+                            <p class="another__coin__coins" onclick="location.href='./854542'">이더리움</p>
+                            <p class="another__coin__coins" onclick="location.href='./877486'">리플</p>
+                            <p class="another__coin__coins" onclick="location.href='./857634'">도지</p>
+                        </dd>
+                    </dl>
+                </div>
                 <div id="faq">
                     <p class="subtitle">암호화폐 FAQ</p>
                     <p>* 암호화폐는 주식과 다르게 0.1개, 0.0001개 등 분할하여 구매가 가능합니다. ex. 0.3 비트코인</p>
