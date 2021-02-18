@@ -90,8 +90,10 @@
             };
 
             acodian.click('dt');
-            $("#back--img").height($("#content--div").height() + 120);
-            $("#back--img").width("95%");
+            setTimeout(function() {
+                $("#back--img").height($("#content--div").height() + 120);
+                $("#back--img").width("95%");
+            }, 300)
         })
     </script>
 
