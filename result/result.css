@@ -197,6 +197,7 @@ body {
     border-radius: 4rem;
     font-size: 1.7rem !important;
     margin: 3rem auto 0;
+    cursor: pointer;
 }
 
 #footer {
