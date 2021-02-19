@@ -125,6 +125,7 @@ body {
     margin: 1.8rem 1.6rem 0;
     cursor: pointer;
     padding: 0.1rem 2rem;
+    z-index: 99999;
 }
 
 .another__coin__coins {
@@ -141,6 +142,10 @@ body {
 
 #another__coin--div {
     margin: 1rem auto 0;
+}
+
+dl {
+    z-index: 99999;
 }
 
 #faq {
@@ -254,5 +259,8 @@ body {
 
 #back--img {
     width: 95%;
-    ;
+}
+
+#content--div {
+    height: 70%;
 }
