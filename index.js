@@ -55,7 +55,7 @@ $(document).ready(function() {
         }
 
         $($(".process")[index]).css("display", "none");
-        if (index < 9) setTimeout(() => $($(".process")[index + 1]).css("display", "block");, 200)
+        if (index < 9) setTimeout(() => { $($(".process")[index + 1]).css("display", "block") }, 200)
         if (index == 9) {
             $(".loading").css("display", "block");
             let sortobj = [];
@@ -131,7 +131,7 @@ $(document).ready(function() {
         }
 
         $($(".process")[index]).css("display", "none");
-        if (index < 9) setTimeout(() => $($(".process")[index + 1]).css("display", "block");, 200)
+        if (index < 9) setTimeout(() => { $($(".process")[index + 1]).css("display", "block") }, 200)
         if (index == 9) {
             $(".loading").css("display", "block");
             let sortobj = [];
