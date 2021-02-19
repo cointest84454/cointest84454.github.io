@@ -296,3 +296,7 @@ dl {
 #content--div {
     height: 98rem;
 }
+
+dd {
+    margin-left: 2.0rem;
+}
