@@ -60,7 +60,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $($(".process")[index]).css("display", "none");
                 $($(".process")[index + 1]).css("display", "block")
-            }, 100)
+            }, 200)
         }
         if (index == 9) {
             $($(".process")[index]).css("display", "none");
@@ -143,7 +143,7 @@ $(document).ready(function() {
             setTimeout(function() {
                 $($(".process")[index]).css("display", "none");
                 $($(".process")[index + 1]).css("display", "block")
-            }, 100)
+            }, 200)
         }
 
         if (index == 9) {
