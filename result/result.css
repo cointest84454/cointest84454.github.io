@@ -20,6 +20,10 @@
     #footer p {
         font-size: 1.45rem !important;
     }
+    #back--img,
+    #content--div {
+        height: 90rem !important;
+    }
 }
 
 @media screen and (min-width: 580px) {
@@ -29,6 +33,10 @@
     #content p,
     #footer p {
         font-size: 1.7rem !important;
+    }
+    #back--img,
+    #content--div {
+        height: 97rem !important;
     }
 }
 
@@ -72,6 +80,10 @@
     }
     #result__title {
         width: 90% !important;
+    }
+    #back--img,
+    #content--div {
+        height: 77rem !important;
     }
 }
 
