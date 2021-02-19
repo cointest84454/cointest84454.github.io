@@ -56,7 +56,7 @@ $(document).ready(function() {
 
 
         if (index < 9) {
-            $($(".process__answer--first")[index]).css("background-color", "rgb(247, 147, 27)").css("color", "white").css("transition", "2s");
+            $($(".process__answer--first")[index]).css("background-color", "rgb(247, 147, 27)").css("color", "white").css("transition", "0.2s");
             setTimeout(function() {
                 $($(".process")[index]).css("display", "none");
                 $($(".process")[index + 1]).css("display", "block")
@@ -139,7 +139,7 @@ $(document).ready(function() {
 
 
         if (index < 9) {
-            $($(".process__answer--second")[index]).css("background-color", "rgb(247, 147, 27)").css("color", "white").css("transition", "2s");
+            $($(".process__answer--second")[index]).css("background-color", "rgb(247, 147, 27)").css("color", "white").css("transition", "0.2s");
             setTimeout(function() {
                 $($(".process")[index]).css("display", "none");
                 $($(".process")[index + 1]).css("display", "block")
