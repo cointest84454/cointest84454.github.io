@@ -93,6 +93,11 @@
             setTimeout(function() {
                 $("#back--img").height($("#content--div").height() + 120);
                 $("#back--img").width("95%");
+                $("#band img")
+                    .attr("src", "../images/band_icon.png")
+                    .attr("width", "34")
+                    .attr("height", "34")
+                    .attr("style", "margin-left:0.6rem;margin-bottom:0.125rem");
             }, 500)
         })
     </script>
@@ -191,6 +196,12 @@
                         <a href="javascript:;" id="kakao-link-btn">
                             <img src="../images/kakao_icon.png" width="10px" />
                         </a>
+                        <span id="band" style="display: flex;align-items: center;">
+                            <script type="text/javascript" src="//developers.band.us/js/share/band-button.js?v=19022021"></script>
+                            <script type="text/javascript">
+                                new ShareBand.makeButton({"lang":"ko-KR","type":"c"});
+                            </script>
+                        </span>
                     </div>
                 </div>
 
