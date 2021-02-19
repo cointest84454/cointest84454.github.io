@@ -10,6 +10,12 @@
         height: 6rem;
         ;
     }
+    #another__coin {
+        padding: 0 7%!important;
+    }
+    #return_main {
+        margin: 0 !important;
+    }
 }
 
 @media screen and (min-width: 580px) {
@@ -33,6 +39,31 @@
         width: 60% !important;
         transform: translate(-50%, 0) !important;
         background-color: white !important;
+    }
+    #another__coin {
+        padding: 0 13%!important;
+        font-size: 1.1rem !important;
+    }
+    #return_main {
+        margin: 0 !important;
+        font-size: 1.1rem !important;
+    }
+    .subtitle {
+        font-size: 2.2rem !important;
+    }
+    #content p,
+    #footer p {
+        font-size: 1.35rem !important;
+    }
+    #back--img,
+    #content--div {
+        height: 78rem !important;
+    }
+    #content--div {
+        top: 12rem !important;
+    }
+    #result__title {
+        width: 90% !important;
     }
 }
 
