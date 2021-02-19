@@ -55,7 +55,10 @@ $(document).ready(function() {
         }
 
         $($(".process")[index]).css("display", "none");
-        if (index < 9) $($(".process")[index + 1]).css("display", "block");
+        if (index < 9) {
+            $(".process__answer--first").css("background-color", "rgb(247, 147, 27)").css("color", "white");
+            $($(".process")[index + 1]).css("display", "block")
+        }
         if (index == 9) {
             $(".loading").css("display", "block");
             let sortobj = [];
@@ -131,7 +134,11 @@ $(document).ready(function() {
         }
 
         $($(".process")[index]).css("display", "none");
-        if (index < 9) $($(".process")[index + 1]).css("display", "block");
+        if (index < 9) {
+            $(".process__answer--second").css("background-color", "rgb(247, 147, 27)").css("color", "white");
+            $($(".process")[index + 1]).css("display", "block")
+        }
+
         if (index == 9) {
             $(".loading").css("display", "block");
             let sortobj = [];
