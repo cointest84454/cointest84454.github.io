@@ -111,6 +111,7 @@ body {
     position: absolute;
     bottom: 20%;
     font-size: 1.7rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .process__answer--second {
@@ -127,6 +128,7 @@ body {
     position: absolute;
     bottom: 9%;
     font-size: 1.7rem;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
