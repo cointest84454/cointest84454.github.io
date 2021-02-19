@@ -26,6 +26,10 @@
     .process {
         width: 500px;
     }
+    #content p,
+    #footer p {
+        font-size: 1.7rem !important;
+    }
 }
 
 @media screen and (max-width: 319px) {
@@ -298,7 +302,7 @@ dl {
 
 #back--img,
 #content--div {
-    height: 90rem;
+    height: 97rem;
 }
 
 dd {
