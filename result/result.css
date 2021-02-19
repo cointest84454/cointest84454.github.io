@@ -212,9 +212,9 @@ dl {
 
 #buy_coin {
     background-color: rgb(247, 147, 27);
-    width: 43%;
+    width: max-content;
     text-align: center;
-    padding: 1.3rem 0 0.9rem;
+    padding: 1.3rem 2rem 0.9rem;
     border-radius: 4rem;
     font-size: 1.7rem !important;
     margin: 3rem auto 0;
