@@ -302,5 +302,5 @@ dl {
 }
 
 dd {
-    margin-left: 2.0rem;
+    margin-left: 2.0rem !important;
 }
