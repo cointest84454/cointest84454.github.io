@@ -16,6 +16,10 @@
     #return_main {
         margin: 0 !important;
     }
+    #content p,
+    #footer p {
+        font-size: 1.45rem !important;
+    }
 }
 
 @media screen and (min-width: 580px) {
