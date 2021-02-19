@@ -25,6 +25,7 @@
 
 * {
     font-family: 'NanumSquare', sans-serif !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
