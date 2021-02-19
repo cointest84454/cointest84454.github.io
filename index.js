@@ -54,12 +54,16 @@ $(document).ready(function() {
 
         }
 
-        $($(".process")[index]).css("display", "none");
+
         if (index < 9) {
             $($(".process__answer--first")[index]).css("background-color", "rgb(247, 147, 27)").css("color", "white").css("transition", "2s");
-            $($(".process")[index + 1]).css("display", "block")
+            setTimeout(function() {
+                $($(".process")[index]).css("display", "none");
+                $($(".process")[index + 1]).css("display", "block")
+            }, 100)
         }
         if (index == 9) {
+            $($(".process")[index]).css("display", "none");
             $(".loading").css("display", "block");
             let sortobj = [];
             for (let coin in coins) {
@@ -133,13 +137,17 @@ $(document).ready(function() {
 
         }
 
-        $($(".process")[index]).css("display", "none");
+
         if (index < 9) {
             $($(".process__answer--second")[index]).css("background-color", "rgb(247, 147, 27)").css("color", "white").css("transition", "2s");
-            $($(".process")[index + 1]).css("display", "block")
+            setTimeout(function() {
+                $($(".process")[index]).css("display", "none");
+                $($(".process")[index + 1]).css("display", "block")
+            }, 100)
         }
 
         if (index == 9) {
+            $($(".process")[index]).css("display", "none");
             $(".loading").css("display", "block");
             let sortobj = [];
             for (let coin in coins) {
