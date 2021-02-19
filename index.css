@@ -122,11 +122,10 @@ body {
     font-size: 1.7rem;
 }
 
-.process__answer--first:hover,
-.process__answer--second:hover {
+.process__answer--first:active,
+.process__answer--second:active {
     background-color: rgb(247, 147, 27);
     color: white;
-    transition: 0.3s;
 }
 
 .load-wrapp {
