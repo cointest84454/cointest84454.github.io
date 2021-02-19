@@ -95,11 +95,10 @@ body {
     text-indent: -1.1rem;
 }
 
-#another__coin,
-#return_main {
+#another__coin {
     font-family: 'NanumSquare', sans-serif !important;
     background-color: rgb(247, 147, 27);
-    width: 16rem;
+    width: max-content;
     height: 3.5rem;
     font-size: 1.5rem;
     display: flex;
@@ -109,7 +108,23 @@ body {
     color: white;
     margin: 1.8rem 1.6rem 0;
     cursor: pointer;
-    padding: 0.1rem 0;
+    padding: 0.1rem 2rem;
+}
+
+#return_main {
+    font-family: 'NanumSquare', sans-serif !important;
+    background-color: rgb(247, 147, 27);
+    width: max-content;
+    height: 3.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.9rem;
+    color: white;
+    margin: 1.8rem 1.6rem 0;
+    cursor: pointer;
+    padding: 0.1rem 2rem;
 }
 
 .another__coin__coins {
