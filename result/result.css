@@ -36,7 +36,7 @@
     }
     #back--img,
     #content--div {
-        height: 97rem !important;
+        height: 100rem !important;
     }
 }
 
@@ -314,11 +314,6 @@ dl {
 
 #back--img {
     width: 95%;
-}
-
-#back--img,
-#content--div {
-    height: 97rem;
 }
 
 dd {
