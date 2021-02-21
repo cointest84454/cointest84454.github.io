@@ -48,78 +48,80 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            Kakao.init('2af871559731a9008ebe3658019028e6');
-            Kakao.Link.createDefaultButton({
-                container: '#kakao-link-btn',
-                objectType: 'feed',
-                content: {
-                    title: document.title,
-                    description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
-                    imageUrl: "https://cointest84454.github.io/images/thum_ada.png",
-                    link: {
-                        webUrl: document.location.href,
-                        mobileWebUrl: document.location.href
-                    }
-                },
-                buttons: [{
-                    title: '테스트 결과 확인하기',
-                    link: {
-                        mobileWebUrl: document.location.href,
-                        webUrl: document.location.href
-                    }
-                }]
-            });
-
-            function copyToClipboard(val) {
-                var t = document.createElement("textarea");
-                document.body.appendChild(t);
-                t.value = val;
-                t.select();
-                document.execCommand('copy');
-                document.body.removeChild(t);
-            }
-            $('#copy_link').click(function() {
-                copyToClipboard(window.location.href);
-                alert("링크가 복사되었습니다")
-            });
-            $("dd").css('display', 'none');
-            var acodian = {
-
-                click: function(target) {
-                    var _self = this,
-                        $target = $(target)
-                    $target.on('click', function() {
-                        if ($(this).next('dd').css('display') == 'none') {
-                            $('dd').slideUp();
-                            _self.onremove($target);
-
-                            $(this).addClass('on');
-                            $(this).next().slideDown();
-                        } else {
-                            $('dd').slideUp();
-                            _self.onremove($target);
-
-                        }
-                    });
-                },
-                onremove: function($target) {
-                    $target.removeClass('on');
-                }
-
-            };
-
-            acodian.click('dt');
-            $("#band img")
-                .attr("src", "../images/band_icon.png")
-                .attr("width", "34")
-                .attr("height", "34")
-                .attr("style", "margin-left:0.6rem;margin-bottom:0.125rem");
             setTimeout(function() {
+                Kakao.init('2af871559731a9008ebe3658019028e6');
+                Kakao.Link.createDefaultButton({
+                    container: '#kakao-link-btn',
+                    objectType: 'feed',
+                    content: {
+                        title: document.title,
+                        description: '비트코인 테스트 - 투자 성향에 맞는 코인 찾기',
+                        imageUrl: "https://cointest84454.github.io/images/thum_ada.png",
+                        link: {
+                            webUrl: document.location.href,
+                            mobileWebUrl: document.location.href
+                        }
+                    },
+                    buttons: [{
+                        title: '테스트 결과 확인하기',
+                        link: {
+                            mobileWebUrl: document.location.href,
+                            webUrl: document.location.href
+                        }
+                    }]
+                });
+
+                function copyToClipboard(val) {
+                    var t = document.createElement("textarea");
+                    document.body.appendChild(t);
+                    t.value = val;
+                    t.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(t);
+                }
+                $('#copy_link').click(function() {
+                    copyToClipboard(window.location.href);
+                    alert("링크가 복사되었습니다")
+                });
+                $("dd").css('display', 'none');
+                var acodian = {
+
+                    click: function(target) {
+                        var _self = this,
+                            $target = $(target)
+                        $target.on('click', function() {
+                            if ($(this).next('dd').css('display') == 'none') {
+                                $('dd').slideUp();
+                                _self.onremove($target);
+
+                                $(this).addClass('on');
+                                $(this).next().slideDown();
+                            } else {
+                                $('dd').slideUp();
+                                _self.onremove($target);
+
+                            }
+                        });
+                    },
+                    onremove: function($target) {
+                        $target.removeClass('on');
+                    }
+
+                };
+
+                acodian.click('dt');
                 $("#band img")
                     .attr("src", "../images/band_icon.png")
                     .attr("width", "34")
                     .attr("height", "34")
                     .attr("style", "margin-left:0.6rem;margin-bottom:0.125rem");
+                setTimeout(function() {
+                    $("#band img")
+                        .attr("src", "../images/band_icon.png")
+                        .attr("width", "34")
+                        .attr("height", "34")
+                        .attr("style", "margin-left:0.6rem;margin-bottom:0.125rem");
+                }, 1000)
             }, 1000)
         })
     </script>
