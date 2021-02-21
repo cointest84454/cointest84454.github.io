@@ -22,7 +22,7 @@
     }
     #back--img,
     #content--div {
-        height: 92rem !important;
+        height: 93rem !important;
     }
 }
 
@@ -83,7 +83,7 @@
     }
     #back--img,
     #content--div {
-        height: 77rem !important;
+        height: 80rem !important;
     }
     #faq p:not(.subtitle) {
         font-size: 1.3rem !important;
