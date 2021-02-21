@@ -88,6 +88,14 @@
     #faq p:not(.subtitle) {
         font-size: 1.3rem !important;
     }
+    dd {
+        position: relative !important;
+        left: 5% !important;
+    }
+    dd p {
+        width: 83% !important;
+        font-size: 11px !important;
+    }
 }
 
 @font-face {
