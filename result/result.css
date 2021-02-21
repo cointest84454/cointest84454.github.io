@@ -326,4 +326,5 @@ dl {
 
 dd {
     margin-left: 2.4rem !important;
+    display: none;
 }
