@@ -22,7 +22,7 @@
     }
     #back--img,
     #content--div {
-        height: 90rem !important;
+        height: 92rem !important;
     }
 }
 
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 319px) {
     .process {
-        width: 1005;
+        width: 100%;
     }
     #contents--support {
         line-height: 100px !important;

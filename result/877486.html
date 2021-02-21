@@ -48,6 +48,8 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+
+
             Kakao.init('2af871559731a9008ebe3658019028e6');
             Kakao.Link.createDefaultButton({
                 container: '#kakao-link-btn',
@@ -109,6 +111,13 @@
             };
 
             acodian.click('dt');
+
+            $("#band img")
+                .attr("src", "../images/band_icon.png")
+                .attr("width", "34")
+                .attr("height", "34")
+                .attr("style", "margin-left:0.6rem;margin-bottom:0.125rem");
+
             setTimeout(function() {
                 $("#band img")
                     .attr("src", "../images/band_icon.png")
@@ -197,7 +206,7 @@
                         <dd id="another__coin--div">
                             <p class="another__coin__coins" onclick="location.href='./864833'">비트코인</p>
                             <p class="another__coin__coins" onclick="location.href='./854542'">이더리움</p>
-                            <p class="another__coin__coins" onclick="location.href='./877486'">리플</p>
+                            <p class="another__coin__coins" onclick="location.href='./546354'">에이다</p>
                             <p class="another__coin__coins" onclick="location.href='./857634'">도지</p>
                         </dd>
                     </dl>
